@@ -9,7 +9,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        return None, "Error: Division by zero is not allowed!"
+        return None, "Error: Division by 0 is not allowed!" #Replaced zero by 0
     return a / b, None
 
 def check_even_odd(num):
@@ -17,19 +17,19 @@ def check_even_odd(num):
 
 def calculate_percentage(a, b):
     if b == 0:
-        return None, "Error: Division by zero is not allowed!"
+        return None, "Error: Division by 0 is not allowed!" #Replaced zero by 0
     return (a / b) * 100, None
 
 
 def calculator():
     while True:
         print("\n----- Calculator -----")
-        print("1. Addition")
-        print("2. Subtraction")
-        print("3. Multiplication")
-        print("4. Division")
+        print("1. Addition (+)") #Added Signs 
+        print("2. Subtraction (-)") #Added Signs
+        print("3. Multiplication (*)") #Added Signs
+        print("4. Division (/)") #Added Signs
         print("5. Check Even/Odd")
-        print("6. Percentage")
+        print("6. Percentage (%)") #Added Signs
         print("7. Exit")
         
         try:
@@ -39,7 +39,7 @@ def calculator():
             continue
 
         if option == 7:
-            print("Exiting program. Goodbye!")
+            print("Exiting program. ") #Changed the string
             break
 
         if option < 1 or option > 7:
